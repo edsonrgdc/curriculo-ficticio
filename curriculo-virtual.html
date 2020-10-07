@@ -17,6 +17,8 @@
         }
 
         h1 {
+            background-color: white;
+            display: inline-block;
             font-family: 'Courier New', Courier, monospace;
             color: cadetblue
         }
@@ -44,14 +46,53 @@
         }
 
         .project {
-            text-align: justify;
-            background-color:lightcyan;
+            text-align: left;
             display: flex;
-            padding: 10px 10px 10px 10 px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .diferente {
+            -webkit-box-shadow: 0px 2px 7px 8px rgba(138, 131, 138, 0.58);
+            -moz-box-shadow: 0px 2px 7px 8px rgba(138, 131, 138, 0.58);
+            box-shadow: 0px 2px 7px 8px rgba(138, 131, 138, 0.58);
+            display: inline-block;
+            border-radius: 7px;
+        }
+
+        .cartao {
             border-radius: 10px;
-            justify-content:space-between;
-            
-            
+            align-items: center;
+            padding: 10px 5px 10px 5px;
+            width: 400px;
+            margin: 8px;
+            font-size: 11px;
+            list-style: none;
+            font-family: cursive -webkit-box-shadow: 0px 2px 7px 8px rgba(138, 131, 138, 0.58);
+            -moz-box-shadow: 0px 2px 7px 8px rgba(138, 131, 138, 0.58);
+            box-shadow: 0px 2px 7px 8px rgba(138, 131, 138, 0.58);
+        }
+
+        footer {
+            border-radius: 15px;
+            text-align: center;
+            color: cadetblue;
+            font-size: 20px;
+        }
+
+        .caracteristicas {
+            color: slategrey;
+        }
+
+        .mais {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 0;
+        }
+
+        .mais div {
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -59,15 +100,15 @@
     <h1>Édson Ruan Goulart da Costa</h1>
 </header>
 
-<Body background="escura.jfif">
+<Body background="area.jpg">
 
     <div> <img src="Foto.jpg" alt="Foto"></div>
 
     <main>
         <section>
             <div>
-                <h2>Informações pessoais</h2>
-                <h3>Data de nascimento</h3>
+                <h2>Informações Pessoais</h2>
+                <h3>Data de Nascimento</h3>
                 <dl>
                     <dd>22/01/2002</dd>
                 </dl>
@@ -82,7 +123,7 @@
 
             <div>
                 <h3>Email para contato</h3>
-                <a href="mailto:edsonrgdc@gmail.com">edsonrgdc@gmail.com</a>
+                <a href="mailto:edsonrgdc18@gmail.com">edsonrgdc18@gmail.com</a>
             </div>
 
             <div>
@@ -90,7 +131,7 @@
                 <dl>
                     <dt>Estado:</dt>
                     <dd>Rio Grande do Sul</dd>
-                    <dt>Cidade</dt>
+                    <dt>Cidade:</dt>
                     <dd>São Leopoldo</dd>
                     <dt>Rua:</dt>
                     <dd>Franscico Mathias de Oliveira, 175.</dd>
@@ -100,17 +141,19 @@
             <div>
                 <h3>Redes Sociais</h3>
                 <ol>
-                    <li><a href="https://www.facebook.com/ruan.costa.35513800/">facebook</a></li>
-                    <li><a href="https://github.com/edsonrgdc">github</a></li>
+                    <li><a href="https://www.facebook.com/ruan.costa.35513800/">Facebook</a></li>
+                    <li><a href="https://github.com/edsonrgdc">Github</a></li>
                 </ol>
             </div>
         </section>
 
         <section>
             <h2>Características da minha pessoa</h2>
-            <p style="color: slategrey;">Tenho como aspectos da minha pessoa: proatividade, pontualidade, excelência,
-                equilibrio emocional e boa comunicação, gosto de trabalhar individualmente e em grupo.
-                Estou sempre em busca de conhecimentos que agregam valor a mim e aqueles que estão junto comigo.</p>
+            <p class="caracteristicas">São algumas caracteristicas da minha pessoa: proatividade, pontualidade,
+                excelencia,
+                equilibrio emocional e boa comunicação. Gosto de trabalhar tanto individualmente como em grupo.
+                Estou sempre em busca de conhecimentos que agreguem valor a minha pessoa e também para aqueles que
+                convivem junto comigo.</p>
         </section>
 
         <section>
@@ -125,12 +168,18 @@
             <div>
                 <h3>Cursos em andamento</h3>
                 <ul>
-                    <li>Cursando - Front End;</li>
-                    <li>Cursando - Eletromecanica de manutençaõ industrial no SENAI;</li>
+                    <li>Cursando - Front End - Tecno Start</li>
+                    <li>Cursando - Eletroeletrônica de manutençaõ industrial - SENAI - São Leopoldo;</li>
                     <li>Cursando - carteira de habilitação AB.</li>
                 </ul>
             </div>
 
+            <div>
+                <h3>Complemento</h3>
+                <ul>
+                    <li>Carteira de habilitação AB - Em andamento.</li>
+                </ul>
+            </div>
             <div>
                 <h3>Cursos concluídos</h3>
                 <ul>
@@ -141,40 +190,42 @@
             </div>
         </section>
 
-        <section>
-            <h2 style="background-color: lightcyan;">Projetos</h2>
+        <section class="mais">
+            <div>
+                <h2 class="diferente">Projetos</h2>
+            </div>
             <ul class="project">
-                <li>
+                <li class="cartao">
                     <h3>Maquinas avançadas</h3>
                     <span>Tecnologia: nenhuma específica</span>
                     <p>Maquinas que podem distorcer a realidade através de uma tempestade catastrófica imaginaria.</p>
                 </li>
 
-                <li>
-                    <h3>Mouse tecnlogogico</h3>
+                <li class="cartao">
+                    <h3>Mouse tecnologico</h3>
                     <span>Tecnologia: antiga</span>
                     <p>Mouse capaz de acelerar a troca de páginas na velocidade de uma lesma.</p>
                 </li>
 
-                <li>
+                <li class="cartao">
                     <h3>Placa mãe</h3>
                     <span>Tecnologia: nenhuma</span>
                     <p>Hardware capaz de aguentar extremas temperaturas através de códigos Git.</p>
                 </li>
 
-                <li>
+                <li class="cartao">
                     <h3>Grande terremoto</h3>
                     <span>Tecnologia: Unity</span>
                     <p>jogo de realidade virtual simulador de terremotos.</p>
                 </li>
 
-                <li>
+                <li class="cartao">
                     <h3>Boxe</h3>
                     <span>Tecnologia: Unity</span>
                     <p>Jogo de luta, inspirado em Rock Balboa.
                     <P></P>
 
-                <li>
+                <li class="cartao">
                     <h3>jogo da lesma</h3>
                     <span>Tecnologia nenhuma</span>
                     <p>Consiste em empurrar lesmas por um percurso de 50 metros com uma mangueira d'água.</p>
@@ -188,10 +239,10 @@
     <br>
     <br>
     <br>
+    <br>
 
     <footer>
-        <p style="text-align: center; color: cadetblue; font-size: 20px;">Desenvolvido por Édson Ruan Goulart da Costa.
-        </p>
+        <p>Desenvolvido por Édson Ruan Goulart da Costa.</p>
     </footer>
 </body>
 
